@@ -24,7 +24,7 @@ public class HanoiClass {
 			hanoi(n-1,y_stack,x_stack,z_stack);
 		}
 	}
-	
+	//the number of movements is 2^n-1,n is the number of disk
 	public void move(HanoiStack<Integer> a_stack,HanoiStack<Integer> b_stack){
 		Integer value = (Integer) a_stack.pop();
 		b_stack.push(value);
@@ -38,7 +38,7 @@ public class HanoiClass {
 		    HanoiStack<Integer> x_stack = new HanoiStack<Integer>("X");
 		    HanoiStack<Integer> y_stack = new HanoiStack<Integer>("Y");
 		    HanoiStack<Integer> z_stack = new HanoiStack<Integer>("Z");
-		    int size = 20;
+		    int size = 25;
 		
 		    HanoiClass hc = new HanoiClass();
 		    hc.init(size,x_stack);
